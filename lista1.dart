@@ -1,5 +1,6 @@
 void main() { 
  // Lista tipo entero 
+ print("Paola Ramirez Amaya 22308051281284 gpo 6 J");
  List<int> numeros = [10, 20, 30]; //declarar lista de elementos numeros tipo enteros
  print("Lista de numeros enteros:");
  print(numeros); //imprimir la lista de elementos numeros
