@@ -65,7 +65,6 @@ class Producto{
 }
 class Venta{
   int id_venta;
-  String direccion;
   int codigo;
   int id_cliente;
   String fecha;
@@ -74,12 +73,11 @@ class Venta{
   String tipo_pago;
 
   //constructor
-  Venta(this.id_venta, this.direccion, this.codigo, this.id_cliente, this.fecha, this.precio, this.id_producto, this.tipo_pago);
+  Venta(this.id_venta, this.codigo, this.id_cliente, this.fecha, this.precio, this.id_producto, this.tipo_pago);
 
   //capturar datos
   void datos(){
     id_venta = 1;
-    direccion = "Calle Londres, Colonia Ondon, Ciudad Londres";
     codigo = 123456;
     id_cliente = 1;
     fecha = "10/10/2021";
@@ -90,7 +88,6 @@ class Venta{
 
   void mostrar(){
     print("Id venta: $id_venta");
-    print("Direccion: $direccion");
     print("Codigo: $codigo");
     print("Id cliente: $id_cliente");
     print("Fecha: $fecha");
@@ -119,7 +116,7 @@ void main(){
 
   print("---Tabla de ventas");
   //crear objeto de la clase venta
-  var venta = new Venta(0, "", 0, 0, "", 0.0, 0, "");
+  var venta = new Venta(0, 0, 0, "", 0.0, 0, "");
   //capturar datos
   venta.datos();
   //Mostrar los atributos del objeto
